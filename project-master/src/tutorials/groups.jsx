@@ -27,6 +27,8 @@ function Groups() {
                 <li>Closing</li>
             </ol>
 
+            <img src="https://rindle.com/assets/imgs/blog/body-image-02.jpeg" alt="Five Process Groups"/>
+
             <h2>Initiating Process Group:</h2>
             <p><strong>Purpose:</strong> This group involves defining a new project or a new phase of an existing project. It is about getting the project started.</p>
             <p><strong>Key Activities:</strong></p>
