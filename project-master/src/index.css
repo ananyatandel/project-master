@@ -67,6 +67,7 @@ button:focus-visible {
   }
 }
 
+/* Styling for the Tutorials Page */
 #tutorialsMain{
   display: flex;
   flex-direction: row;

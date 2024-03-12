@@ -7,22 +7,3 @@
   align-items: center;
 }
 
-
-.image-container {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-}
-
-/* Style for image */
-.image-container img {
-  width: 200px; /* Adjust as per your requirement */
-  height: auto;
-  border-radius: 10px;
-}
-
-/* Style for label */
-.image-container .label {
-  text-align: center;
-  margin-top: 10px;
-}
