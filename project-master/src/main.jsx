@@ -21,7 +21,21 @@ const router = createBrowserRouter([
       },
       {
         path: "Tutorials",
-        element: <Tutorials />
+        element: <Tutorials />,
+        children: [
+          {
+            path: "tutorials/Groups",
+            element: <Groups />
+          },
+          {
+            path: "/tutorials/Pmp",
+            element: <Pmp />
+          },
+          {
+            path: "/tutorials/Stakeholder",
+            element: <Stakeholder />
+          },
+        ],
       },
       {
         path:"App",

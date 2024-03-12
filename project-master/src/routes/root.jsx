@@ -11,7 +11,7 @@ export default function Root() {
           <div className="navLinks">
             <a href={`./Documents`}>Documents Page</a>
             <a href={`./Tutorials`}>Tutorials Page</a>
-            <a href={`./App`}>App Page</a>
+            <a href={`./App`}>Login Page</a>
           </div>
 
         </div>
