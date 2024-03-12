@@ -13,8 +13,8 @@ export default function Root() {
             <a href={`./Tutorials`}>Tutorials Page</a>
             <a href={`./App`}>Login Page</a>
           </div>
-
         </div>
+        
         <div id="detail">
             <Outlet />
         </div>

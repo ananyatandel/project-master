@@ -1,44 +1,48 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './main.css'
+import { useState } from 'react';
+import { Outlet, Link } from 'react-router-dom';
+import Pmp from './tutorials/Pmp.jsx';
+import Groups from './tutorials/Groups.jsx';
+import Stakeholder from './tutorials/Stakeholder.jsx';
 
 function Tutorials() {
-  const [count, setCount] = useState(0)
+  const [display, setDisplay] = useState("Main")
 
-  return (
-    <>
-        <div>
-            <p>This is the Tutorials page</p>
+  function loadTutorial(newDisplay){
+    setDisplay(newDisplay) //Changes what is displayed
+  }
+
+  if (display == "Main"){
+    return (
+      <>
+        <div id="tutorialsMain">
+
+            <button id="PmpTutorial" className='tutorialButton' onClick={()=>loadTutorial("PmpTutorial")}>Project Management Plan</button>
+            <button id="GroupsTutorial" className='tutorialButton' onClick={()=>loadTutorial("GroupsTutorial")}>5 Groups of Processes</button>
+            <button id="StakeholderTutorial" className='tutorialButton' onClick={()=>loadTutorial("StakeholderTutorial")}>Stakeholder Management</button>
+
         </div>
-        <div id="tutorials">
-    {/* <!-- Image container --> */}
-    <div class="image-container">
-      {/* <!-- First image --> */}
-      <div>
-        <a href="link_to_first_page.html">
-          <img src="image1.jpg" alt="Image 1"/>
-          <div class="label">Project Management Plan</div>
-        </a>
-      </div>
-      {/* <!-- Second image --> */}
-      <div>
-        <a href="link_to_second_page.html">
-          <img src="image2.jpg" alt="Image 2"/>
-          <div class="label">5 Groups</div>
-        </a>
-      </div>
-      {/* <!-- Third image --> */}
-      <div>
-        <a href="link_to_third_page.html">
-          <img src="image3.jpg" alt="Image 3"/>
-          <div class="label">Identify Stakeholders</div>
-        </a>
-      </div>
-    </div>
-  </div>
-    </>
-  )
+      </>
+    )
+  }else if (display == "PmpTutorial"){
+    return (
+      <Pmp />
+    )
+  }
+  else if (display == "GroupsTutorial"){
+    return (
+      <Groups />
+    )
+  }else if (display == "StakeholderTutorial"){
+    return (
+      <Stakeholder />
+    )
+  }else{
+    return(
+      <p>Error: tutorial not found</p>
+    )
+  }
+
+  
 }
 
 export default Tutorials

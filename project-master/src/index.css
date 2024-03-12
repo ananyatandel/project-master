@@ -25,9 +25,9 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background: linear-gradient(#fb569c, #8225e2);
 }
 
 h1 {
@@ -65,4 +65,21 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+#tutorialsMain{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-top: 150px;
+  width: 80%;
+  height: 90%;
+  background-color: white;
+  padding-bottom: 30px;
+  border-radius: 6px;
+}
+
+.tutorialButton{
+  background-color: #fb569c;
+  color: white;
 }
