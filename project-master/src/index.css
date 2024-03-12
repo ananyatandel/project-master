@@ -47,7 +47,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #fbb831;
 }
 button:focus,
 button:focus-visible {
@@ -71,12 +71,13 @@ button:focus-visible {
 #tutorialsMain{
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   margin: auto;
   margin-top: 150px;
   width: 80%;
   height: 90%;
   background-color: white;
-  padding-bottom: 30px;
+  padding: 30px;
   border-radius: 6px;
 }
 
