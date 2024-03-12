@@ -1,20 +1,19 @@
 import { Outlet } from "react-router-dom";
+import './root.css';
 
 export default function Root() {
     return (
       <>
-        <div id="sidebar">
-          <h1>React Router - can turn into nav bar</h1>
-          <nav>
-            <ul>
-              <li>
-                <a href={`./Documents`}>Documents Page</a>
-              </li>
-              <li>
-                <a href={`./Tutorials`}>Tutorials Page</a>
-              </li>
-            </ul>
-          </nav>
+        <div id="navBar">
+          
+          <h1 id='logo'>Project Master</h1>
+          
+          <div className="navLinks">
+            <a href={`./Documents`}>Documents Page</a>
+            <a href={`./Tutorials`}>Tutorials Page</a>
+            <a href={`./App`}>App Page</a>
+          </div>
+
         </div>
         <div id="detail">
             <Outlet />

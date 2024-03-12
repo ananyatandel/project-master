@@ -1,0 +1,29 @@
+#navBar{
+    display: grid;
+    grid-template-columns:2fr 3fr;
+    /* display: flex; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: #fff;
+    border-bottom: #8225e2;
+    position: sticky;
+    top: 0;
+}
+
+#logo{
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.navLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.navLinks a{
+    color:#fb569c;
+}
+
