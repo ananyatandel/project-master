@@ -67,7 +67,7 @@ button:focus-visible {
   }
 }
 
-/* Styling for the Tutorials Page */
+/* Tutorials.jsx Styling */
 #tutorialsMain{
   display: flex;
   flex-direction: row;
@@ -84,4 +84,37 @@ button:focus-visible {
 .tutorialButton{
   background-color: #fb569c;
   color: white;
+}
+
+/* Documents.jsx Styling */
+iframe{
+  width: 30%;
+  height: 200px;
+}
+
+.mainGrid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 150px;
+  width: 80%;
+  height: 90%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 6px;
+}
+
+.documentBox{
+  margin: 4px;
+  display: flex;
+  flex-direction: column;
+  background: #fbb831;
+  padding:5px;
+  border-radius: 6px;
+}
+
+.docPhoto{
+  border-radius: 6px;
 }

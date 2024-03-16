@@ -1,10 +1,13 @@
 import { Outlet } from "react-router-dom";
 import './root.css';
+import purpleLogo from '../assets/new_purple_logo_no_title.png';
 
 export default function Root() {
     return (
       <>
         <div id="navBar">
+
+          <img src={purpleLogo} alt="Logo" id='logoImg'></img>
           
           <h1 id='logo'>Project Master</h1>
           
