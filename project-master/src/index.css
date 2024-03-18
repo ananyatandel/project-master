@@ -25,6 +25,7 @@ a:hover {
 body {
   margin: 0;
   display: flex;
+  flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
   background: linear-gradient(#fb569c, #8225e2);
@@ -68,7 +69,7 @@ button:focus-visible {
 }
 
 /* Tutorials.jsx Styling */
-#tutorialsMain{
+/* #tutorialsMain{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -79,11 +80,11 @@ button:focus-visible {
   background-color: white;
   padding: 30px;
   border-radius: 6px;
-}
+} */
 
 .tutorialButton{
-  background-color: #fb569c;
-  color: white;
+  color: #fb569c;
+  border-color: #fb569c;
 }
 
 /* Documents.jsx Styling */
@@ -98,7 +99,8 @@ iframe{
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: auto;
-  margin-top: 150px;
+  margin-top: 100px;
+  margin-bottom: 90px;
   width: 80%;
   height: 90%;
   background-color: white;
@@ -113,8 +115,56 @@ iframe{
   background: #fbb831;
   padding:5px;
   border-radius: 6px;
+  width: 25%;
+  min-width: 250px;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: center;
 }
 
 .docPhoto{
+  /* display: flex;
+  flex-direction: row; */
   border-radius: 6px;
+  max-width: 250px;
+}
+
+.tutorialBox{
+  margin: 4px;
+  display: flex;
+  flex-direction: column;
+  background: #fb8569;
+  padding:5px;
+  border-radius: 6px;
+  width: 25%;
+  min-width: 250px;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: center;
+}
+
+/* Tutorial Content Pages */
+.tutorialContentPage{
+  /* display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; */
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 90px;
+  width: 80%;
+  height: 90%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 6px;
+  align-items: left;
+}
+
+.tutorialContentPage h1{
+  color:#8225e2;
+}
+
+.inTextTutorialImg{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }

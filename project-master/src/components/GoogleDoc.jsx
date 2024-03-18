@@ -38,7 +38,7 @@ function GoogleDocsViewer({URL, setURL, imageLink, title}){
                 <div className='documentBox'>
                   <a href={URL}><img src={imageLink} alt="photo" className='docPhoto'/></a>
                   <h2>{title}</h2>
-                  <button onClick={changeLink}>Change Link</button>
+                  <button className='tutorialButton' onClick={changeLink}>Change Link</button>
                 </div>
             )
         }else{
@@ -46,8 +46,8 @@ function GoogleDocsViewer({URL, setURL, imageLink, title}){
                 <div className='documentBox'>
                   <a href={URL}><img src={imageLink} alt="photo" className='docPhoto'/></a>
                   <h2>{title}</h2>
-                  <button onClick={changeLink}>Change Link</button>
-                  <button onClick={revertLink}>Reset to Template</button>
+                  <button className='tutorialButton' onClick={changeLink}>Change Link</button>
+                  <button className='tutorialButton' onClick={revertLink}>Reset to Template</button>
                 </div>
             )
         }
@@ -58,10 +58,10 @@ function GoogleDocsViewer({URL, setURL, imageLink, title}){
                 <div className='documentBox'>
                   <a href={URL}><img src={imageLink} alt="photo" className='docPhoto'/></a>
                   <h2>{title}</h2>
-                  <button onClick={changeLink}>Change Link</button>
+                  <button className='tutorialButton' onClick={changeLink}>Change Link</button>
                   <form method="post" onSubmit={submitLink}>
                     <input type="URL" name="newLink" />
-                    <button type="submit">Submit</button>
+                    <button className='tutorialButton' type="submit">Submit</button>
                   </form>
                   
                 </div>
@@ -71,11 +71,11 @@ function GoogleDocsViewer({URL, setURL, imageLink, title}){
                 <div className='documentBox'>
                   <a href={URL}><img src={imageLink} alt="photo" className='docPhoto'/></a>
                   <h2>{title}</h2>
-                  <button onClick={changeLink}>Change Link</button>
-                  <button onClick={revertLink}>Reset to Template</button>
+                  <button className='tutorialButton' onClick={changeLink}>Change Link</button>
+                  <button className='tutorialButton' onClick={revertLink}>Reset to Template</button>
                   <form method="post" onSubmit={submitLink}>
                     <input type="URL" name="newLink" />
-                    <button type="submit">Submit</button>
+                    <button className='tutorialButton' type="submit">Submit</button>
                   </form>
                 </div>
             )

@@ -1,14 +1,16 @@
 import { useState } from 'react'
+import groupImg from '../assets/inTextTutorialPictures/groupsTutPage.jpeg';
 
 function Groups() {
   const [count, setCount] = useState(0)
 
   return (
-        <div>
-            <h1>What is Project Management?</h1>
+        <div className='tutorialContentPage'>
+            <h1>Five Groups of Project Mangement Processes</h1>
+            <h2>What is Project Management?</h2>
             <p>The application of knowledge, skills, tools, and techniques to project activities to meet project environments.</p>
 
-            <h1>What is a Project?</h1>
+            <h2>What is a Project?</h2>
             <ul>
                 <li>A time-scoped/time-boxed activity</li>
                 <li>Has a beginning, middle, and an end</li>
@@ -18,7 +20,7 @@ function Groups() {
 
             <p>In project management, projects are often broken down into phases, stages, or groups to facilitate better planning, execution, and control. One widely recognized framework is the Project Management Institute's (PMI) Project Management Body of Knowledge (PMBOK).</p>
 
-            <h1>What are the five process groups?</h1>
+            <h2>What are the five process groups?</h2>
             <ol>
                 <li>Initiating</li>
                 <li>Planning</li>
@@ -27,7 +29,7 @@ function Groups() {
                 <li>Closing</li>
             </ol>
 
-            <img src="https://rindle.com/assets/imgs/blog/body-image-02.jpeg" alt="Five Process Groups"/>
+            <img className='inTextTutorialImg' src={groupImg} alt="Five Process Groups"/>
 
             <h2>Initiating Process Group:</h2>
             <p><strong>Purpose:</strong> This group involves defining a new project or a new phase of an existing project. It is about getting the project started.</p>
