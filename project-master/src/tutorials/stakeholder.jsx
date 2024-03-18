@@ -2,7 +2,7 @@ import { useState } from 'react'
 import ImageOne from '../assets/inTextTutorialPictures/stakeImg1.avif'
 import ImageTwo from '../assets/inTextTutorialPictures/stakeImg2.png'
 import ImageThree from '../assets/inTextTutorialPictures/stakeImg3.png'
-import ImageFour from '../assets/inTextTutorialPictures/stakeImg4.webp'
+import ImageFive from '../assets/inTextTutorialPictures/stakeImg5.jpg'
 
 
 function Stakeholder() {
@@ -46,10 +46,11 @@ function Stakeholder() {
             <li>Enterprise Environmental Factors: Factors that can influence stakeholder identification, such as organizational culture, structure, and existing relationships.</li>
         </ul>
 
-        <h2>4. Stakeholder Register:</h2>
-        <p>The output of the Identify Stakeholders process is a Stakeholder Register. The Stakeholder Register contains information about each stakeholder, including their name, role, expectations, interests, and level of influence. It serves as a valuable reference throughout the project, aiding in communication, planning, and managing stakeholder expectations.</p>
+        <h2>4. Stakeholder Organization Chart:</h2>
+        <p>A stakeholder organization chart is a visual representation that outlines the key stakeholders involved in a project, initiative, or organization, along with their relationships and levels of influence. It helps in understanding who has a vested interest in the project or organization and how they are connected to each other. The chart usually depicts the relationships between stakeholders, indicating who reports to whom, who influences whom, and who holds decision-making power. This visualization helps in fostering better communication, collaboration, and decision-making among stakeholders throughout the project or organizational process.</p>
+        
+        <img className='inTextTutorialImg' src={ImageFive} alt="Stakeholder Org Chart"/>
 
-        <img className='inTextTutorialImg' src={ImageFour} alt="Stakeholder Register"/>
 
         <h2>5. Continuous Update:</h2>
         <p>Stakeholder identification is not a one-time activity. The project team should continuously review and update the Stakeholder Register as the project progresses. New stakeholders may emerge, and existing stakeholders' interests and influence levels may change.</p>

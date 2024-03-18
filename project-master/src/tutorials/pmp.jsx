@@ -1,4 +1,7 @@
 import { useState } from 'react'
+import PMPImageOne from '../assets/inTextTutorialPictures/pmpImageOne.png'
+import PMPImageTwo from '../assets/inTextTutorialPictures/pmpImageTwo.png'
+
 
 function Pmp() {
   const [count, setCount] = useState(0)

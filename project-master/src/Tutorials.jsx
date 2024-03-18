@@ -3,9 +3,16 @@ import { Outlet, Link } from 'react-router-dom';
 import Pmp from './tutorials/Pmp.jsx';
 import Groups from './tutorials/groups.jsx';
 import Stakeholder from './tutorials/stakeholder.jsx';
-import stakeholderIMG from './assets/stakeholders.png';
-import fivegroups from './assets/fivegroups.png';
-import pmPlan from './assets/pm_plan.jpeg';
+import stakeholderIMG from './assets/Stakeholder_Tutorial_Thumbnail.png';
+import fivegroups from './assets/Five_Groups_Tutorial_Thumbnail.png';
+import pmPlan from './assets/PMP_Tutorial_Thumbnail.png';
+// import tutorialPlaceholderOne from './assets/Tutorial_Placeholder_1.png';
+// import tutorialPlaceholderTwo from './assets/Tutorial_Placeholder_2.png';
+// import tutorialPlaceholderThree from './assets/Tutorial_Placeholder_3.png';
+
+
+
+
 
 function Tutorials() {
   const [display, setDisplay] = useState("Main")
