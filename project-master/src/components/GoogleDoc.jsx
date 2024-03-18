@@ -36,7 +36,7 @@ function GoogleDocsViewer({URL, setURL, imageLink, title}){
         if(linkChanged == false){
             return (
                 <div className='documentBox'>
-                  <a href={URL}><img src={imageLink} alt="photo" className='docPhoto'/></a>
+                  <a href={URL} target="_blank" rel="noopener noreferrer"><img src={imageLink} alt="photo" className='docPhoto'/></a>
                   <h2>{title}</h2>
                   <button className='tutorialButton' onClick={changeLink}>Change Link</button>
                 </div>
@@ -44,7 +44,7 @@ function GoogleDocsViewer({URL, setURL, imageLink, title}){
         }else{
             return (
                 <div className='documentBox'>
-                  <a href={URL}><img src={imageLink} alt="photo" className='docPhoto'/></a>
+                  <a href={URL} target="_blank" rel="noopener noreferrer"><img src={imageLink} alt="photo" className='docPhoto'/></a>
                   <h2>{title}</h2>
                   <button className='tutorialButton' onClick={changeLink}>Change Link</button>
                   <button className='tutorialButton' onClick={revertLink}>Reset to Template</button>
@@ -56,7 +56,7 @@ function GoogleDocsViewer({URL, setURL, imageLink, title}){
         if(linkChanged == false){
             return (
                 <div className='documentBox'>
-                  <a href={URL}><img src={imageLink} alt="photo" className='docPhoto'/></a>
+                  <a href={URL} target="_blank" rel="noopener noreferrer"><img src={imageLink} alt="photo" className='docPhoto'/></a>
                   <h2>{title}</h2>
                   <button className='tutorialButton' onClick={changeLink}>Change Link</button>
                   <form method="post" onSubmit={submitLink}>
@@ -69,7 +69,7 @@ function GoogleDocsViewer({URL, setURL, imageLink, title}){
         }else{
             return (
                 <div className='documentBox'>
-                  <a href={URL}><img src={imageLink} alt="photo" className='docPhoto'/></a>
+                  <a href={URL} target="_blank" rel="noopener noreferrer"><img src={imageLink} alt="photo" className='docPhoto'/></a>
                   <h2>{title}</h2>
                   <button className='tutorialButton' onClick={changeLink}>Change Link</button>
                   <button className='tutorialButton' onClick={revertLink}>Reset to Template</button>
@@ -88,51 +88,3 @@ function GoogleDocsViewer({URL, setURL, imageLink, title}){
 }
 
 export default GoogleDocsViewer
-
-
-
-
-// if(displayURLChange == false){
-//     if(linkChanged == false){
-//         return (
-//             <div>
-//               <iframe src={URL}/>
-//               <button onClick={changeLink}>Change Link</button>
-//             </div>
-//         )
-//     }else{
-//         return (
-//             <div>
-//               <iframe src={URL}/>
-//               <button onClick={changeLink}>Change Link</button>
-//               <button onClick={revertLink}>Reset to Template</button>
-//             </div>
-//         )
-//     }
-// }else{
-
-//     if(linkChanged == false){
-//         return (
-//             <div>
-//               <iframe src={URL}/>
-//               <button onClick={changeLink}>Change Link</button>
-//               <form method="post" onSubmit={submitLink}>
-//                 <input type="URL" name="newLink" />
-//                 <button type="submit">Submit</button>
-//               </form>
-              
-//             </div>
-//         )
-//     }else{
-//         return (
-//             <div>
-//               <iframe src={URL}/>
-//               <button onClick={changeLink}>Change Link</button>
-//               <button onClick={revertLink}>Reset to Template</button>
-//               <form method="post" onSubmit={submitLink}>
-//                 <input type="URL" name="newLink" />
-//                 <button type="submit">Submit</button>
-//               </form>
-//             </div>
-//         )
-//     }
