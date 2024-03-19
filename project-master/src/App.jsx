@@ -6,7 +6,6 @@ function App() {
 
   return (
     <>
-      <p>This is the app page</p>
       <Login />
     </>
     
