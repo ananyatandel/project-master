@@ -20,8 +20,10 @@ function Pmp() {
         <p>
           This plan is designed to help create a defined path towards the execution, monitor 
           and control and closing process. This plan will help guide you through the rest of 
-          the project so it's important to set it up correctly. 
+          the project so it's important to set it up correctly. Here’s an example of what it looks like:
         </p>
+
+        <img className='inTextTutorialImg' src={PMPImageOne} alt="Example Project Management Plan"/>
 
         <p>
           This plan is created with some input from key stakeholders. If you are unsure who 
@@ -88,6 +90,8 @@ function Pmp() {
         <p>
           The bolded baselines are the recommended “required” aspects to start your project management plan. Ideally these baselines were agreed upon during the charter/creation of the project with the sponsor/client. These are going to be key to starting the foundation of your project. 
         </p>
+
+        <img className='inTextTutorialImg' src={PMPImageTwo} alt="Project Management Process"/>
 
         <h3>Tips Before Starting</h3>
         <ol>
