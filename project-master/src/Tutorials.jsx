@@ -1,11 +1,14 @@
 import { useState } from 'react';
 import { Outlet, Link } from 'react-router-dom';
-import Pmp from './tutorials/Pmp.jsx';
+import Pmp from './tutorials/pmp.jsx';
 import Groups from './tutorials/groups.jsx';
 import Stakeholder from './tutorials/stakeholder.jsx';
 import stakeholderIMG from './assets/Stakeholder_Tutorial_Thumbnail.png';
 import fivegroups from './assets/Five_Groups_Tutorial_Thumbnail.png';
 import pmPlan from './assets/PMP_Tutorial_Thumbnail.png';
+import placeholderOne from './assets/Tutorial_Placeholder_1.png';
+import placeholderTwo from './assets/Tutorial_Placeholder_2.png';
+import placeholderThree from './assets/Tutorial_Placeholder_3.png';
 // import tutorialPlaceholderOne from './assets/Tutorial_Placeholder_1.png';
 // import tutorialPlaceholderTwo from './assets/Tutorial_Placeholder_2.png';
 // import tutorialPlaceholderThree from './assets/Tutorial_Placeholder_3.png';
@@ -42,6 +45,24 @@ function Tutorials() {
             <img src={stakeholderIMG} alt="photo" className='docPhoto'/>
             <h2>Stakeholder Management</h2>
             <button id="StakeholderTutorial" className='tutorialButton' onClick={()=>loadTutorial("StakeholderTutorial")}>Go to Tutorial</button>
+          </div>
+
+          <div className='tutorialBox'>
+            <img src={placeholderOne} alt="photo" className='docPhoto'/>
+            <h2>Placeholder</h2>
+            <button className='tutorialButton'>Placeholder</button>
+          </div>
+
+          <div className='tutorialBox'>
+            <img src={placeholderTwo} alt="photo" className='docPhoto'/>
+            <h2>Placeholder</h2>
+            <button className='tutorialButton'>Placeholder</button>
+          </div>
+
+          <div className='tutorialBox'>
+            <img src={placeholderThree} alt="photo" className='docPhoto'/>
+            <h2>Placeholder</h2>
+            <button className='tutorialButton'>Placeholder</button>
           </div>
 
         </div>
