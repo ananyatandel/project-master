@@ -9,9 +9,6 @@ import pmPlan from './assets/PMP_Tutorial_Thumbnail.png';
 import placeholderOne from './assets/Tutorial_Placeholder_1.png';
 import placeholderTwo from './assets/Tutorial_Placeholder_2.png';
 import placeholderThree from './assets/Tutorial_Placeholder_3.png';
-// import tutorialPlaceholderOne from './assets/Tutorial_Placeholder_1.png';
-// import tutorialPlaceholderTwo from './assets/Tutorial_Placeholder_2.png';
-// import tutorialPlaceholderThree from './assets/Tutorial_Placeholder_3.png';
 
 
 
@@ -27,45 +24,50 @@ function Tutorials() {
   if (display == "Main"){
     return (
       <>
-        <div className="mainGrid">
+        <div className='gridContentPage'>
+          <h1>Tutorials</h1>
+          <p>insert information about this page</p>
+          <div className="mainGrid">
 
-          <div className='tutorialBox'>
-            <img src={pmPlan} alt="photo" className='docPhoto'/>
-            <h2>Project Management Plan</h2>
-            <button id="PmpTutorial" className='tutorialButton' onClick={()=>loadTutorial("PmpTutorial")}>Go to Tutorial</button>
+            <div className='tutorialBox'>
+              <img src={pmPlan} alt="photo" className='docPhoto'/>
+              <h2>Project Management Plan</h2>
+              <button id="PmpTutorial" className='tutorialButton' onClick={()=>loadTutorial("PmpTutorial")}>Go to Tutorial</button>
+            </div>
+
+            <div className='tutorialBox'>
+              <img src={fivegroups} alt="photo" className='docPhoto'/>
+              <h2>Five Groups of Project Management</h2>
+              <button id="GroupsTutorial" className='tutorialButton' onClick={()=>loadTutorial("GroupsTutorial")}>Go to Tutorial</button>
+            </div>
+
+            <div className='tutorialBox'>
+              <img src={stakeholderIMG} alt="photo" className='docPhoto'/>
+              <h2>Stakeholder Management</h2>
+              <button id="StakeholderTutorial" className='tutorialButton' onClick={()=>loadTutorial("StakeholderTutorial")}>Go to Tutorial</button>
+            </div>
+
+            <div className='tutorialBox'>
+              <img src={placeholderOne} alt="photo" className='docPhoto'/>
+              <h2>Placeholder</h2>
+              <button className='tutorialButton'>Placeholder</button>
+            </div>
+
+            <div className='tutorialBox'>
+              <img src={placeholderTwo} alt="photo" className='docPhoto'/>
+              <h2>Placeholder</h2>
+              <button className='tutorialButton'>Placeholder</button>
+            </div>
+
+            <div className='tutorialBox'>
+              <img src={placeholderThree} alt="photo" className='docPhoto'/>
+              <h2>Placeholder</h2>
+              <button className='tutorialButton'>Placeholder</button>
+            </div>
+
           </div>
-
-          <div className='tutorialBox'>
-            <img src={fivegroups} alt="photo" className='docPhoto'/>
-            <h2>Five Groups of Project Management</h2>
-            <button id="GroupsTutorial" className='tutorialButton' onClick={()=>loadTutorial("GroupsTutorial")}>Go to Tutorial</button>
-          </div>
-
-          <div className='tutorialBox'>
-            <img src={stakeholderIMG} alt="photo" className='docPhoto'/>
-            <h2>Stakeholder Management</h2>
-            <button id="StakeholderTutorial" className='tutorialButton' onClick={()=>loadTutorial("StakeholderTutorial")}>Go to Tutorial</button>
-          </div>
-
-          <div className='tutorialBox'>
-            <img src={placeholderOne} alt="photo" className='docPhoto'/>
-            <h2>Placeholder</h2>
-            <button className='tutorialButton'>Placeholder</button>
-          </div>
-
-          <div className='tutorialBox'>
-            <img src={placeholderTwo} alt="photo" className='docPhoto'/>
-            <h2>Placeholder</h2>
-            <button className='tutorialButton'>Placeholder</button>
-          </div>
-
-          <div className='tutorialBox'>
-            <img src={placeholderThree} alt="photo" className='docPhoto'/>
-            <h2>Placeholder</h2>
-            <button className='tutorialButton'>Placeholder</button>
-          </div>
-
         </div>
+        
       </>
     )
   }else if (display == "PmpTutorial"){
