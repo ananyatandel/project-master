@@ -176,7 +176,8 @@ h1{
 
 
 
-/* dashboard styling */
+/* DASHBOARD / TODO LIST */
+
 .todo-list-container {
   max-width: 600px;
   margin: 0 auto;
@@ -186,13 +187,14 @@ h1{
 .todo-list {
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #f9f9f9;
+  background-color: #fbb831;
   padding: 20px;
 }
 
 .todo-list h1 {
   text-align: center;
   margin-bottom: 20px;
+  color: #8225e2; /* Purple */
 }
 
 .todo-list .task-form {
@@ -212,7 +214,7 @@ h1{
   padding: 10px 20px;
   border-radius: 5px;
   border: none;
-  background-color: #007bff;
+  background-color: #fb8569; /* Orange */
   color: #fff;
   font-size: 16px;
   cursor: pointer;
@@ -220,7 +222,7 @@ h1{
 }
 
 .todo-list .task-form button:hover {
-  background-color: #0056b3;
+  background-color: #fb569c; /* Pink */
 }
 
 .todo-list .tasks {
@@ -239,7 +241,7 @@ h1{
 }
 
 .todo-list .task.completed {
-  background-color: #eaeaea;
+  background-color: #e850e0; /* Light Purple */
 }
 
 .todo-list .task span {
@@ -258,7 +260,7 @@ h1{
   padding: 5px 10px;
   border-radius: 5px;
   border: none;
-  background-color: #dc3545;
+  background-color: #8225e2; /* Purple */
   color: #fff;
   font-size: 14px;
   cursor: pointer;
@@ -266,11 +268,11 @@ h1{
 }
 
 .todo-list .task button:hover {
-  background-color: #c82333;
+  background-color: #fbb831; /* Yellow */
 }
 
 .todo-list .progress-bar {
-  height: 50px;
+  height: 30px;
   background-color: #eaeaea;
   border-radius: 5px;
   overflow: hidden;
@@ -293,4 +295,68 @@ h1{
   transform: translate(-50%, -50%);
   font-size: 14px;
   color: #000;
+}
+
+
+/* PEOPLE / TEAM LIST */
+
+.team-list-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.team-list {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fbb831;
+  padding: 20px;
+}
+
+.team-list h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #8225e2; /* Purple */
+}
+
+.team-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.team-list li {
+  margin-bottom: 10px;
+  color: #fb8569; /* Orange */
+}
+
+.team-list li span {
+  margin-right: 10px;
+}
+
+.team-list .add-member-form {
+  display: flex;
+  margin-top: 20px;
+}
+
+.team-list .add-member-form input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.team-list .add-member-form button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fb569c; /* Pink */
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.team-list .add-member-form button:hover {
+  background-color: #e850e0; /* Light Purple */
 }
