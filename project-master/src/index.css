@@ -171,3 +171,126 @@ h1{
 .backButton{
   margin:20px;
 }
+
+
+
+
+
+/* dashboard styling */
+.todo-list-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.todo-list {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.todo-list h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.todo-list .task-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.todo-list .task-form input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.todo-list .task-form button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo-list .task-form button:hover {
+  background-color: #0056b3;
+}
+
+.todo-list .tasks {
+  margin-bottom: 20px;
+}
+
+.todo-list .task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.todo-list .task.completed {
+  background-color: #eaeaea;
+}
+
+.todo-list .task span {
+  flex: 1;
+  cursor: pointer;
+}
+
+.todo-list .edit-input {
+  flex: 1;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.todo-list .task button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #dc3545;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo-list .task button:hover {
+  background-color: #c82333;
+}
+
+.todo-list .progress-bar {
+  height: 50px;
+  background-color: #eaeaea;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.todo-list .progress {
+  height: 100%;
+  background-color: #28a745;
+  transition: width 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.todo-list .progress span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: #000;
+}
