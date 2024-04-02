@@ -26,7 +26,7 @@ function Tutorials() {
       <>
         <div className='gridContentPage'>
           <h1>Tutorials</h1>
-          <p>insert information about this page</p>
+          <p>Go through the various tutorials to learn more about project management. Many of these tutorials will also be helpful </p>
           <div className="mainGrid">
 
             <div className='tutorialBox'>
