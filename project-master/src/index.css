@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif, "DM Serif Text";
   line-height: 1.5;
   font-weight: 400;
 
@@ -11,6 +11,18 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.dm-serif text-regular {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif text-regular-italic {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 a {
@@ -32,8 +44,12 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 3.4em;
   line-height: 1.1;
+}
+
+.logo{
+  font-family: "DM Serif Text";
 }
 
 button {
@@ -83,14 +99,15 @@ iframe{
   margin: 4px;
   display: flex;
   flex-direction: column;
-  background: #FB8569;
+  /* background: #fb569c; */
   padding:5px;
   border-radius: 6px;
   width: 25%;
-  min-width: 250px;
-  /* justify-content: center; */
+  min-width: 270px;
+  /* justify-content: end; */
   align-items: center;
   text-align: center;
+  margin-bottom:20px;
 }
 
 .docPhoto{
@@ -178,22 +195,29 @@ h1{
 
 /* DASHBOARD / TODO LIST */
 
+
 .todo-list-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 90%;
+  height: 90%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 6px;
 }
 
 .todo-list {
-  border: 1px solid #ccc;
+  border: 5px solid #fbb831;
   border-radius: 5px;
-  background-color: #fbb831;
+  /* background-color: #fbb831; */
   padding: 20px;
 }
 
 .todo-list h1 {
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 0px;
   color: #8225e2; /* Purple */
 }
 
@@ -301,21 +325,27 @@ h1{
 /* PEOPLE / TEAM LIST */
 
 .team-list-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 90%;
+  height: 90%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 6px;
 }
 
 .team-list {
-  border: 1px solid #ccc;
+  border: 5px solid #fbb831;
   border-radius: 5px;
-  background-color: #fbb831;
+  /* background-color: #fbb831; */
   padding: 20px;
 }
 
 .team-list h1 {
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 0px;
   color: #8225e2; /* Purple */
 }
 
@@ -331,6 +361,10 @@ h1{
 
 .team-list li span {
   margin-right: 10px;
+}
+
+.team-list li button{
+  border: 1px solid #fb569c;
 }
 
 .team-list .add-member-form {

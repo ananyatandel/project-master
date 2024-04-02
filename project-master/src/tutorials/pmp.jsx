@@ -20,7 +20,7 @@ function Pmp() {
         <p>
           This plan is designed to help create a defined path towards the execution, monitor 
           and control and closing process. This plan will help guide you through the rest of 
-          the project so it's important to set it up correctly. Here’s an example of what it looks like:
+          the project so it's important to set it up correctly. Here's an example of what it looks like:
         </p>
 
         <img className='inTextTutorialImg' src={PMPImageOne} alt="Example Project Management Plan"/>

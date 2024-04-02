@@ -39,17 +39,22 @@ function Documents() {
 
   return (
     <>
-      <div className='mainGrid'>
-
-
-        <GoogleDocsViewer URL={urlOne} setURL={seturlOne} imageLink={imageOne} title={titleOne}></GoogleDocsViewer>
-        <GoogleDocsViewer URL={urlTwo} setURL={seturlTwo} imageLink={imageTwo} title={titleTwo}></GoogleDocsViewer>
-        <GoogleDocsViewer URL={urlThree} setURL={seturlThree} imageLink={imageThree} title={titleThree}></GoogleDocsViewer>
-        <GoogleDocsViewer URL={urlFour} setURL={seturlFour} imageLink={imageFour} title={titleFour}></GoogleDocsViewer>
-        <GoogleDocsViewer URL={urlFour} setURL={seturlFour} imageLink={imageFive} title={titleFour}></GoogleDocsViewer>
-        <GoogleDocsViewer URL={urlFour} setURL={seturlFour} imageLink={imageSix} title={titleFour}></GoogleDocsViewer>
-        
+      <div className='gridContentPage'>
+        <h1>Project Documents</h1>
+        <p>Below are templates for the different project documents you might need while managing your project. You can click on the images to take you to the template. Once at the template simply make a copy of the template and click the <emp>change link</emp> button to insert your personalized link.</p>
       
+        <div className='mainGrid'>
+    
+    
+          <GoogleDocsViewer URL={urlOne} setURL={seturlOne} imageLink={imageOne} title={titleOne}></GoogleDocsViewer>
+          <GoogleDocsViewer URL={urlTwo} setURL={seturlTwo} imageLink={imageTwo} title={titleTwo}></GoogleDocsViewer>
+          <GoogleDocsViewer URL={urlThree} setURL={seturlThree} imageLink={imageThree} title={titleThree}></GoogleDocsViewer>
+          <GoogleDocsViewer URL={urlFour} setURL={seturlFour} imageLink={imageFour} title={titleFour}></GoogleDocsViewer>
+          <GoogleDocsViewer URL={urlFour} setURL={seturlFour} imageLink={imageFive} title={titleFour}></GoogleDocsViewer>
+          <GoogleDocsViewer URL={urlFour} setURL={seturlFour} imageLink={imageSix} title={titleFour}></GoogleDocsViewer>
+          
+        
+        </div>
       </div>
     </>
   )

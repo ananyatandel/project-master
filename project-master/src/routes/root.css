@@ -13,7 +13,8 @@
 }
 
 #logo{
-    font-size: 1.5rem;
+    font-family: "DM Serif Text";
+    font-size: 1.8rem;
     text-align: left;
 }
 
@@ -30,5 +31,6 @@
 
 .navLinks a{
     color:#fb569c;
+    font-size: 1.3rem;
 }
 
